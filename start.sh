@@ -1,0 +1,1 @@
+./build/src/create-cpp-project $1
