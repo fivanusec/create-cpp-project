@@ -40,5 +40,11 @@ int main(int argc, char *argv[])
         std::cout << "CMake files already exists" << std::endl;
     }
 
-    std::cout << "Project " << argv[1] << " created successfully!" << std::endl;
+    if (system("git init") == -1)
+    {
+        std::cout << "Problem with git" << std::endl;
+    }
+
+    std::cout
+        << "Project " << argv[1] << " created successfully!" << std::endl;
 }
