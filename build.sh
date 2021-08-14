@@ -5,6 +5,7 @@ ENDCOLOR="\e[0m"
 cmake -B build
 cd build
 make
+make package
 
 if [ $? -eq 0 ]; then
    echo -e "${GREEN}create-cpp-project build successfully${ENDCOLOR}"
